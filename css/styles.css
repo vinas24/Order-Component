@@ -12,7 +12,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(../images/pattern-background-desktop.svg);
+  /* Background code taken from another solution as I had no clue as to how to do it */
+  background: url("../images/pattern-background-desktop.svg"),
+    hsl(225, 100%, 94%);
+  background-position: top left;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
   color: hsl(224, 23%, 55%);
 }
 .card {
@@ -30,16 +36,16 @@ body {
   align-items: center;
   justify-content: center;
 }
-h3 {
-  font-size: 16px;
-  font-weight: 900;
-  color: hsl(223, 47%, 23%);
-}
-h2 {
+h1 {
   font-size: 27px;
   font-weight: 900;
   color: hsl(223, 47%, 23%);
   margin: 2rem 0 0.5rem;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
 }
 .main-text {
   text-align: center;
@@ -80,7 +86,7 @@ p {
 .change > a {
   color: hsl(245, 75%, 52%);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .change > a:hover {
   text-decoration: none;
@@ -91,9 +97,9 @@ p {
   border: none;
   background-color: hsl(245, 75%, 52%);
   color: white;
-  font-size: 16;
-  border-radius: 10px;
+  font-size: 16px;
   font-weight: 700;
+  border-radius: 10px;
   width: 82%;
   margin: 1rem;
   padding: 1rem 0;
