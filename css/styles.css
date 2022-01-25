@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/pattern-background-desktop.svg);
+  color: hsl(224, 23%, 55%);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 440px;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.15);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+h2 {
+  font-size: 27px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin: 2rem 0 0.5rem;
+}
+.main-text {
+  text-align: center;
+  font-weight: 500;
+  margin: 1rem 55px;
+}
+p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.change {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plan-bubble {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background-color: hsl(225, 100%, 98%);
+  width: 82%;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.plan-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.change > a {
+  color: hsl(245, 75%, 52%);
+  font-size: 16px;
+  font-weight: 700;
+}
+.change > a:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
+.pay-bubble {
+  cursor: pointer;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-size: 16;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 82%;
+  margin: 1rem;
+  padding: 1rem 0;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.15);
+}
+.pay-bubble:hover {
+  opacity: 0.75;
+}
+.cancel {
+  cursor: pointer;
+  font-size: 16px;
+  border-style: none;
+  background-color: white;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  margin: 01rem 0 3.5rem;
+}
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
